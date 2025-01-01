@@ -1,0 +1,73 @@
+# Các thư mục và file do hệ thống tạo ra
+bin/
+obj/
+out/
+
+# Các file liên quan đến khóa và thông tin cá nhân
+*.user
+*.lock.json
+*.suo
+*.userosscache
+*.sln.docstates
+
+# File tạm thời của IDE và build
+*.ide
+*.tmp
+*.bak
+*.swp
+*.log
+
+# File và thư mục của các công cụ build
+.DS_Store
+.vs/
+.idea/
+.vscode/
+_ReSharper*
+*.dotCover
+*.orig
+
+# Thư mục của thư viện và công cụ bên thứ ba
+*.nuget/
+*.npm/
+node_modules/
+packages/
+wwwroot/lib/
+
+# Các thư mục và file log
+*.log
+logs/
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Các file được tạo tự động bởi hệ thống
+*.generated.cs
+*.generated.ts
+*.generated.js
+
+# File cài đặt môi trường và cấu hình
+.env
+.env.*
+
+# File kết quả test và build
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+test-results/
+artifacts/
+
+# Tạm thời của Docker hoặc cấu hình container
+docker-compose.override.yml
+.docker/
+
+# Tài liệu và file đầu ra của publish
+publish/
+appsettings.Development.json
+
+# File của các công cụ CI/CD
+*.coverage
+*.coveragexml
+*.code-workspace
+build/
