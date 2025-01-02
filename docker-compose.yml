@@ -15,7 +15,7 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092  # sửa lại địa chỉ để dùng hostname kafka
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL: PLAINTEXT
       KAFKA_LISTENER_PORT: 9092
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
@@ -23,7 +23,7 @@ services:
     ports:
       - "9092:9092"
     healthcheck:
-     test: ["CMD", "nc", "-z", "kafka-cntr", "9092"]
+     test: ["CMD", "nc", "-z", "kafka", "9092"]
      interval: 10s
      retries: 5
      timeout: 5s
